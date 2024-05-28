@@ -1,0 +1,326 @@
+/* *******************Responsive****************** */
+
+/* pc */
+@media (min-width: 1024px) {
+
+}
+
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header-cover {
+        background-color: #fff;
+    }
+
+    .img-logo {
+        width: 70px;
+        height: 70px;
+    }
+    .mainheader {
+        margin-top: 0;
+    }
+
+    .menu-section {
+        height: 90px;
+    }
+
+    .navgroup {
+        background-color: transparent;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .navbar {
+        padding-top: 0;
+    }
+
+    .con-pd0 {
+        padding: 0;
+        height: 70px;
+    }
+
+    .navlist_027 {
+        background-color: #fff;
+    }
+
+    .nav_027 > li:hover > a {
+        color: #f6821f;
+        font-weight: bold;
+        background-color: #a4f067;
+    }
+
+    .bgwhite {
+        background-color: #fff;
+    }
+
+    .shop-name {
+        font-size: 30px;
+    }
+
+    .slider {
+        margin-top: 130px;
+    }
+
+    .video-contain {
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px;
+    }
+
+    .video-contain .video-list {
+        background-color: #fff;
+        border-radius: 5px;
+        height: 276px;
+        overflow-y: scroll;
+    }
+
+    .my5 {
+        margin-top: 121x;
+    }
+
+    .btnwrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .thanhtuu2 {
+        margin-top: 165px;
+    }
+
+    .thanhtuu .card-img-top {
+        height: 300px; 
+    }
+
+    .modal-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-section {
+        margin-top: 102px;
+    }
+
+    .contact {
+        margin-top: 110px;
+    }
+
+    .checkoutLayout {
+        grid-template-columns: repeat(1,1fr);
+        gap: 0px;
+        padding: 0px;
+    }
+
+    .checkoutdetail {
+        margin-top: 157px;
+    }
+}
+
+/* mobile */
+@media (max-width: 740px) {
+    .img-logo {
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+    }
+
+    .mainmenu {
+        height: 50px;
+    }
+
+    .menu-section {
+        height: 50px;
+    }
+
+    .navgroup {
+        background-color: transparent;
+        /* height: 70px; */
+        margin-top: -14px;
+    }
+
+    .con-pd0 {
+        padding: 0;
+        height: 50px;
+        background-color: #fff;
+    }
+
+    .navlist_027 {
+        background-color: #fff;
+    }
+
+    .nav_027 > li:hover > a {
+        color: #f6821f;
+        font-weight: bold;
+        background-color: #a4f067;
+    }
+
+    .shop-name {
+        font-size: 30px;
+    }
+
+    .bgwhite {
+        background-color: #fff;
+    }
+
+    .imgvegan {
+        height: 50px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .slider {
+        margin-top: 213px;
+    }
+
+    .img-homeslider {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+    }
+    
+
+    .contain_search {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .footer {
+        padding: 0 15px;
+    }
+    
+    .video-contain {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .video-contain .video-list {
+        background-color: #fff;
+        border-radius: 5px;
+        height: 250px;
+        overflow-y: scroll;
+    }
+
+    .my5 {
+        margin-top: 175px;
+    }
+
+    .btnwrap {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .thanhtuu2 {
+        margin-top: 230px;
+    }
+
+    .tt2-contain {
+        height: auto;
+    }
+
+    .modal-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .service-header {
+        margin-top: 30px;
+    }
+
+    .service-section .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-container {
+        padding: 1rem;
+    }
+
+    .contact {
+        margin-top: 200px;
+    }
+
+    .sp-des {
+        top: 60%;
+    }
+
+    .listProduct {
+        /* padding: 25px 25px; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .checkoutLayout {
+        grid-template-columns: repeat(1,1fr);
+        gap: 0px;
+        padding: 10px;
+    }
+    
+    .checkoutdetail {
+        margin-top: 183px;
+    }
+
+    .cart {
+        width: 100%;
+        height: 83vh;
+    }
+
+
+}
+
+@media (max-width: 850px) {
+    .contact-form {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .contact-info::before {
+        bottom: initial;
+        top: -75px;
+        right: 65px;
+        transform: scale(0.95);
+    }
+
+    .contact-form-content:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+}
+
+@media (max-width: 375px){
+    .header-cover {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 0;
+        margin-right: -10px;
+    }
+
+    .footer .px-4 {
+        padding: 0 !important;
+    }
+
+    .checkoutLayout {
+        padding: 17px;
+    }
+
+    .checkoutLayout .right {
+        padding: 20px;
+    }
+
+    .container.container-product {
+        padding: 0;
+    }
+
+    .contact .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contact-container {
+        margin-left: 10px;
+    }
+}

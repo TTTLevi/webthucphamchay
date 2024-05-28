@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâm Chay</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="preloading">
+    <div class="load">
+        <img src="./images/load.gif">
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-cover">
+            <!-- Main header -->
+            <section class="mainheader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 contain_search">
+                            <a href="index.html"><img src="./images/logo2.png" class="img-fluid imgvegan" alt="thuc pham chay"></a>
+                        </div>
+                        <div class="col-md-4 contain_search">
+                            <div class="input-group">
+                                <div class="header_search">
+                                    <input type="text" class="form-control form-search" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm sản phẩm" aria-describedby="basic-addon2">
+                                    <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 contain_search">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="fs-4 text-danger">
+                                                <i class="fa-solid fa-phone-volume"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div class="text_info">Tư vấn</div>
+                                            <a href="tel:0971452310" class="call_number">0971452310</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <div class="fs-3 text-danger">
+                                                <i class="fa-regular fa-circle-user"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-9">
+                                            <div>Xin chào!</div>
+                                            <a href="product.html" class="header_login">Mua ngay!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 contain_search iconCart">
+                                    <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+                                    <div class="totalQuantity">0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End main header -->
+
+            <!-- Menu navbar -->
+            <section class="mainmenu">
+                <div class="container con-pd0">
+                    <div class="row menu-section">
+                        <nav class="navbar navbar-expand-lg navgroup">
+                            <div class="container-fluid bgwhite">
+                                <p class="navbar-brand">
+                                    <img src="/images/logo.png" alt="" width="100" height="100" class="d-inline-block align-text-center img-fluid img-logo">      
+                                </p>
+                                <span class="shop-name">Tâm chay</span>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-icon"><i class="fa-solid fa-bars"></i></span>
+                                </button>
+                                <div class="collapse navbar-collapse navlist_027" id="navbarNavDropdown">
+                                    <ul class="navbar-nav nav_027">
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link trangchu" aria-current="page" href="index.html">Trang chủ</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link gioithieu" href="introduction.html">Giới thiệu</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link sanpham" href="product.html">Sản phẩm</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link thanhtuumain" href="#">Thành tựu</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link banggia" href="service.html">Bảng giá</a>
+                                        </li>
+                                        <li class="nav-item mx-3">
+                                            <a class="nav-link lienhe" href="contact.html">Liên hệ</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+            <!-- End menu -->
+        </div>
+
+    </header>
+    <!-- End header -->
+    <section class="thanhtuu2">
+        <div class="container">
+            <div class="row contain_search">
+                <div class="col-md-4 tt2-contain">
+                    <div class="contain_search">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <span class="num" data-val="300">000</span>
+                    <div class="contain_search">
+                        <span class="tt2-text">Sold Food</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4 tt2-contain">
+                    <div class="contain_search">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                    <span class="num" data-val="297">000</span>
+                    <div class="contain_search">
+                        <span class="tt2-text">Satisfaction</span>
+                    </div>
+                </div>
+                <div class="col-md-4 tt2-contain">
+                    <div class="contain_search">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <span class="num" data-val="255">000</span>
+                    <div class="contain_search">
+                        <span class="tt2-text">Five Stars</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="thanhtuu">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 class="cook-heading" data-aos="flip-down">Thành tựu</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3 cartBx">
+                        <img src="./images/vegan-certify1.png" class="card-img-top img-fluid " alt="Thành tựu 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Vegan 100% Certification</h5>
+                            <p class="card-text text-center">Đảm bảo thuần chay, hoàn toàn từ rau củ.</p>
+                            <a href="https://www.ivvf.org/ivvf-certified-vegan-product-cpp-2001-2020" class="btn btn-success btn-thanhtuu" target="_blank">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3 cartBx">
+                        <img src="./images/food-certify.png" class="card-img-top img-fluid" alt="Thành tựu 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Quality Food Certification</h5>
+                            <p class="card-text text-center">Đảm bảo sản phẩm chất lượng, tươi ngon.</p>
+                            <a href="https://www.boonsfis.com/en/what-is-a-brc-certificate" class="btn btn-success btn-thanhtuu" target="_blank">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-3 cartBx">
+                        <img src="./images/foodsafe-certify.png" class="card-img-top img-fluid" alt="Thành tựu 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Food Safe Certification</h5>
+                            <p class="card-text text-center">An toàn thực phẩm, không hóa chất.</p>
+                            <a href="https://giayphepthucpham.vn/chung-nhan-chuoi-thuc-pham-an-toan" class="btn btn-success btn-thanhtuu" target="_blank">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cus-feedback  py-5">
+        <div class="container">
+            <h2 class="cook-heading" data-aos="flip-down">Ý kiến khách hàng</h2>
+            <div id="customer-reviews" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="contain_search">
+                            <div class="phan-hoi-item">
+                                <div class="phan-hoi-item-content">
+                                    <div class="ph-content-text">
+                                        <h3>Lucia Le</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="ph-content-img">
+                                        <img src="./images/cus1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p>Giao hàng nhanh, sản phẩm chất lượng</p>
+                                <div class="phan-hoi-item-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>         
+                    </div>
+                    <div class="carousel-item">
+                        <div class="contain_search">
+                            <div class="phan-hoi-item">
+                                <div class="phan-hoi-item-content">
+                                    <div class="ph-content-text">
+                                        <h3>User*****1</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="ph-content-img">
+                                        <img src="./images/cus2.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p>Đóng gói cẩn thận, sản phẩm tươi</p>
+                                <div class="phan-hoi-item-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>                  
+                    </div>
+                    <div class="carousel-item">
+                        <div class="contain_search">
+                            <div class="phan-hoi-item">
+                                <div class="phan-hoi-item-content">
+                                    <div class="ph-content-text">
+                                        <h3>An Trinh</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="ph-content-img">
+                                        <img src="./images/cus3.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p>Dễ sử dụng, dễ bảo quản</p>
+                                <div class="phan-hoi-item-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="carousel-item">
+                        <div class="contain_search">
+                            <div class="phan-hoi-item">
+                                <div class="phan-hoi-item-content">
+                                    <div class="ph-content-text">
+                                        <h3>H*****g</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="ph-content-img">
+                                        <img src="./images/cus4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p>Hương vị ngon, dễ nấu</p>
+                                <div class="phan-hoi-item-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                    <div class="carousel-item">
+                        <div class="contain_search">
+                            <div class="phan-hoi-item">
+                                <div class="phan-hoi-item-content">
+                                    <div class="ph-content-text">
+                                        <h3>Chi Pu</h3>
+                                        <p>Customer</p>
+                                    </div>
+                                    <div class="ph-content-img">
+                                        <img src="./images/cus5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <p>Sản phẩm ngon, bổ, rẻ</p>
+                                <div class="phan-hoi-item-star">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#customer-reviews" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bggreen" aria-hidden="false"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#customer-reviews" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bggreen" aria-hidden="false"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+   
+    <div class="cart">
+        <h2>GIỎ HÀNG</h2>
+        <div class="listCart">
+            <div class="item">
+                <img src="./images/gachienchay.jpg" alt="">
+                <div class="content">
+                    <div class="name">
+                        Gà Miếng Chiên Chay
+                    </div>
+                     <div class="price">
+                        221.000 <sup>đ</sup>/1 product
+                     </div>
+                </div>
+                <div class="quantity">
+                    <button type="button" class="btn btn-light">-</button>
+                    <span class="value">3</span>
+                    <button type="button" class="btn btn-light">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="close">ĐÓNG</div>
+            <div class="checkout">
+                <a href="checkout.html">KIỂM TRA</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container px-4">
+            <div class="row bggreen">
+                <div class="col-md">
+                    <h5 class="mt-2">CỬA HÀNG THỰC PHẨM TÂM CHAY</h5>
+                    <ul class="list-menu">
+						<li><i class="fa-solid fa-house"></i>&nbsp;&nbsp;<span>Chi nhánh 1: Hẻm 5 Mễ Cốc Phường 15 Quận 8</span></li>
+                        <li><i class="fa-solid fa-house"></i>&nbsp;&nbsp;<span>Chi nhánh 2: Chi Lăng 3 Nam Ban Lâm Hà Lâm Đồng</span></li>
+						<li><i class="fa-solid fa-square-phone"></i>&nbsp;&nbsp;<span>Điện thoại:  </span><a href="tel:0335353434">0335353434</a></li>
+                        <li><i class="fa-solid fa-envelope"></i>&nbsp;&nbsp;<span>Email:  </span><a href="mailto:dh52100027@student.stu.edu.vn">dh52100027@student.stu.edu.vn</a></li>
+					</ul>
+                </div>
+                <div class="col-md">
+                    <h5 class="mt-2">NHẬN TIN KHUYẾN MÃI</h5>
+                    <div class="mail_footer">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text bg-danger text-light" id="basic-addon2">Đăng ký</span>
+                        </div>
+                    </div>
+                    <div class="box_square">
+                        <div class="fs-3">
+                            <a href="https://www.facebook.com/su.levi.3/"><i class="fa-brands fa-square-facebook"></i></a>
+                        </div>
+                    </div>
+                    <div class="box_square">
+                        <div class="fs-3">
+                            <a href="https://zalo.me/0971452310"><img src="./images/zalo_icon.png" alt="" width="27px"></a>
+                        </div>
+                    </div>
+                    <div class="box_square">
+                        <div class="fs-3">
+                            <a href="https://www.instagram.com/su.levi.3/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="box_square">
+                        <div class="fs-3">
+                            <a href="www.youtube.com/@thientong-rv2xb"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md">
+                    <div class="my-2 text-center">@Copyright 2024 Cửa hàng Tâm Chay | Designed by Lev</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./js/jquery.js"></script>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+    </body>
+</html>
