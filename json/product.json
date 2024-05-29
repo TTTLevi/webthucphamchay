@@ -3,42 +3,42 @@
         "id": 1,
         "name": "Gà Miếng Chiên Chay - 1kg",
         "price": 221000,
-        "image": "images/gachienchay.jpg",
+        "image": "./images/gachienchay.jpg",
         "link" : "detailpro1.html"
     },
     {
         "id": 2,
         "name": "Gà Lát Chay - 1kg",
         "price": 230000,
-        "image": "images/galatchay.jpg",
+        "image": "./images/galatchay.jpg",
         "link" : "detailpro2.html"
     },
     {
         "id": 3,
         "name": "Heo Quay Chay - 1kg",
         "price": 330000,
-        "image": "images/heoquaychay.jpg",
+        "image": "./images/heoquaychay.jpg",
         "link" : "detailpro3.html"
     },
     {
         "id": 4,
         "name": "Sườn Non Chay - 1kg",
         "price": 133000,
-        "image": "images/suonnonchay.jpg",
+        "image": "./images/suonnonchay.jpg",
         "link" : "detailpro4.html"
     },
     {
         "id": 5,
         "name": "Thịt bằm Chay - 1kg",
         "price": 233000,
-        "image": "images/thitbamctt.webp",
+        "image": "./images/thitbamctt.webp",
         "link" : "detailpro5.html"
     },
     {
         "id": 6,
         "name": "Xúc xích Chay - 300g",
         "price": 85000,
-        "image": "images/xucxichchay.jpg",
+        "image": "./images/xucxichchay.jpg",
         "link" : "detailpro6.html"
     }
 
